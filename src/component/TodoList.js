@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 
-const TodoList = (props) => {
+const TodoList = ({todoList}) => {
     return <div className="todo-list" >
-    <div>Hello1</div>
+    <h2>Your List</h2>
+    {todoList.map(todo => {
+    
+     return(
+       <div className="listContainer" key={todo}>
+         {todo}
+        </div>
+     )
+    })}
     </div>
   }
 
