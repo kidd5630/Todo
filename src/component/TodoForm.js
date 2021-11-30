@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-const TodoForm = ({todoList, setTodoList}) => {
+const TodoForm = ({addTodo}) => {
 
     const[newTodo, setNewTodo] = useState('');
 
     function add(e){
         e.preventDefault();
-        setTodoList([...todoList, newTodo]);
+        addTodo(newTodo);
         resetForm();
     }
 
@@ -19,7 +19,7 @@ const TodoForm = ({todoList, setTodoList}) => {
         <h1 className="formTitle">What Needs To Be Done?</h1>
         <form className="addnewTodo" onSubmit={add}>
             <div>
-                <input className="listnewTodo"
+                <input className="listNewTodo"
                     type="text"
                     placeholder="Action for List"
                     value={newTodo}
