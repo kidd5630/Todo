@@ -27,7 +27,7 @@ const TodoList = ({todoList, setTodoList}) => {
     <ul>
       {todoList.map(todo => {
      return(
-       <li>
+       <li key={todo}>
         {todo}  
         <button onClick={(e) => {selected= todo;Removehandler(e)}}><ClearIcon /> </button>
         </li>
