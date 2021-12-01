@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
 import ClearIcon from '@mui/icons-material/Clear';
 
-const TodoList = ({todoList}) => {
-
+const TodoList = ({todoList, setTodoList}) => {
+  let selected;
+  
   window.onload=function(){
   var list = document.querySelector('ul');
+  if(list){
   list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
 }, false);
-  }
-
-
+  }}
+  
   const Removehandler = (e) => {
     e.preventDefault()
-    console.log("removed")
+    let filtered = todoList.filter((word) => word !== selected)
+    localStorage.setItem('ToDoList', JSON.stringify(Array.from(filtered)))
+    setTodoList(filtered);
   }
 
   if(todoList.length > 0){
@@ -26,7 +29,7 @@ const TodoList = ({todoList}) => {
      return(
        <li>
         {todo}  
-        <button onClick={e => Removehandler(e)}><ClearIcon /> </button>
+        <button onClick={(e) => {selected= todo;Removehandler(e)}}><ClearIcon /> </button>
         </li>
      )
     })}

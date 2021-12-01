@@ -17,6 +17,7 @@ const Todo = () => {
       />
     <TodoList
     todoList={todoList}
+    setTodoList={setTodoList}
     />
   </div>
 }

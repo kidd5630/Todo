@@ -5,8 +5,24 @@
     border: 0;
   }
 .app{
-  margin: 10px;
+  background-color: bisque;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  
 }
+
   ul li.checked {
     text-decoration: line-through;
   }
+
+.todo{
+  background-color:rgb(164, 164, 230);
+  height: fit-content;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 15px;
+  margin: 15px;
+}
