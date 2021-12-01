@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ClearIcon from '@mui/icons-material/Clear';
-import CheckIcon from '@mui/icons-material/Check';
 
 const TodoList = ({todoList}) => {
 
