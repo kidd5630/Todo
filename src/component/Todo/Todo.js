@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import TodoForm from './TodoForm';
-import TodoList from './TodoList';
+import TodoForm from '../TodoForm/TodoForm';
+import TodoList from '../TodoList/TodoList';
+import DeleteAll from '../DeleteAll/DeleteAll';
 
 
 const Todo = () => {
@@ -14,6 +15,8 @@ const Todo = () => {
   return <div className="todo">
     <TodoForm 
       addTodo={addTodo}
+      todoList={todoList}
+      setTodoList={setTodoList}
       />
     <TodoList
     todoList={todoList}

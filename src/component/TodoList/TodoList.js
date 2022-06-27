@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
 import ClearIcon from '@mui/icons-material/Clear';
+
 
 const TodoList = ({todoList, setTodoList}) => {
   let selected;
-  
+
   window.onload=function(){
   var list = document.querySelector('ul');
   if(list){
