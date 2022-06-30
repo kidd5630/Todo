@@ -1,0 +1,28 @@
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+.listTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    text-decoration: underline;
+}
+.taskList{
+    color: #0F989D;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 15px;
+    justify-content: space-between;
+    font-size: 2em;
+    border-bottom: 1px solid black;
+}
+  
+.options{
+    display: flex;
+}

@@ -1,48 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
 }
-#app, .app{
+#app{
+  width: 50%;
+}
+.app{
   display: flex;
   height: 100vh;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   background-size: 100% 100%;
-  background-position: center;
-}
-
-.todo{
-  display: flex;
-  flex-direction: column;
-  height: 79%;
-  width: 70%;
-  padding: 15px;
-  margin: 15px;
-  align-self: center;
-  padding-top: 40px;
-  font-family: Lobster;
-}
-.todo-list{
-  display: flex;
-  flex-direction: column;
-
-}
-ul li {
-  list-style-type: none;
-}
-ul li.checked {
-  text-decoration: line-through;
-}
-.form{
-  border: 1px solid red;
-}
-.input{
-  border: 1px solid black;
-  background-color: rgb(196, 196, 196);
-  height: 40px;
-  width: 90%;
 }

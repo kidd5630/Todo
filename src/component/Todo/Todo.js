@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import TodoForm from '../TodoForm/TodoForm';
 import TodoList from '../TodoList/TodoList';
-import DeleteAll from '../DeleteAll/DeleteAll';
-
+import './Todo.css';
 
 const Todo = () => {
   const [todoList, setTodoList] = useState(localStorage.getItem('ToDoList') ? JSON.parse(localStorage.getItem('ToDoList')) : [])
