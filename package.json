@@ -1,7 +1,7 @@
 {
   "name": "todo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Todo List",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
